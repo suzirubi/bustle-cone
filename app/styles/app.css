@@ -1,0 +1,16 @@
+
+.article {
+  width: 33%;
+  float: left;
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.home-link {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+}
