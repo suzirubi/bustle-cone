@@ -1,5 +1,5 @@
-{{#if updateArticleForm}}
-  <h4>Update "{{article.title}}"</h4>
+{{#if addNewArticle}}
+  <h4>Create New "{{article.title}}"</h4>
   <div>
     <form>
       <div class="form-group">
@@ -22,10 +22,9 @@
         {{input value=image id="image" placeholder=article.image}}
       </div>
 
-      <button {{action 'update' article}}>Save</button>
+      <button {{action 'saveArticle1'}}>Save</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'updateArticleForm'}}>Update</button>
-  <button {{action 'delete' article}}>Delete</button>
+  <button {{action 'articleFormShow'}}>New Article</button>
 {{/if}}
